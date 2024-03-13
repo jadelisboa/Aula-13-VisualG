@@ -1,0 +1,41 @@
+Algoritmo "media_nota"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/03/2024
+Var
+// Seção de Declarações das variáveis 
+NOTA1:real
+NOTA2: real
+TRABALHO: real
+MEDIA: real
+CLASSIFICACAO: caractere
+RESULTADO: real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   ESCREVAL("Digite a NOTA1")
+   LEIA(NOTA1)
+   ESCREVAL("Digite a NOTA2")
+   LEIA(NOTA2)
+   ESCREVAL("Digite seu TRABALHO")
+   LEIA(TRABALHO)
+MEDIA <- (NOTA1 + NOTA2 + TRABALHO)/3
+
+   SE(MEDIA < 5) ENTAO
+    CLASSIFICACAO <- "I"
+   SENAO
+     SE(MEDIA < 7) ENTAO
+      CLASSIFICACAO <- "R"
+   SENAO
+      SE(MEDIA < 9) ENTAO
+        CLASSIFICACAO <- "B"
+   SENAO(MEDIA = 10) ENTAO
+       CLASSIFICACAO <- "MB"
+
+      FIMSE
+     FIMSE
+   FIMSE
+   ESCREVAL("Sua classificacao é: ", CLASSIFICACAO)
+   
+Fimalgoritmo
